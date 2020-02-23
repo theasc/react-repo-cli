@@ -3,18 +3,14 @@
 const chalk = require('chalk');
 const clear = require('clear');
 const figlet = require('figlet');
-const npm = require('./lib/command');
-const files = require('./lib/files');
-const github = require('./lib/github');
 const repo = require('./lib/repo');
 const projectGenerator = require('./lib/projectGenerator');
-const { REPOSITORY, SUPPORTED_GENERATION } = require('./lib/contants');
+const { REPOSITORY } = require('./lib/contants');
 
 clear();
-
 console.log(
   chalk.yellow(
-    figlet.textSync('React repo', { horizontalLayout: 'full' })
+    figlet.textSync('React Repo', { horizontalLayout: 'full' })
   )
 );
 

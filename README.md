@@ -1,3 +1,7 @@
+## Gaol
+
+The goal is to have a cli that generate React/ React Native project and the remote repo that goes with it.
+
 ## License
 
 The MIT License (MIT)

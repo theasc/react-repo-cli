@@ -3,7 +3,7 @@
 const chalk = require('chalk');
 const clear = require('clear');
 const figlet = require('figlet');
-
+const npm = require('./lib/command');
 const files = require('./lib/files');
 const github = require('./lib/github');
 const repo = require('./lib/repo');
@@ -16,9 +16,15 @@ console.log(
   )
 );
 
+const ran = async () => {
+    await npm.executeCommand('npm install react-native');
+};
+
+ran();
+
 if (files.directoryExists('.git')) {
   console.log(chalk.red('Already a Git repository!'));
-  process.exit();
+  //process.exit();
 }
 
 const getGithubToken = async () => {
@@ -66,4 +72,5 @@ const run = async () => {
   }
 };
 
-run();
+//run();
+

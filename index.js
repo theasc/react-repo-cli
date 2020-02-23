@@ -23,7 +23,7 @@ console.log(
     if(project === REPOSITORY){
         repo.generateRepository();
     } 
-    await projectGenerator.generateChosenProject(project);
-    await repo.generateRepository();
+    const projectName = await projectGenerator.generateChosenProject(project);
+    await repo.generateRepository(`./${projectName}`);
 })();
 

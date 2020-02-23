@@ -12,7 +12,7 @@ clear();
 
 console.log(
   chalk.yellow(
-    figlet.textSync('Ginit', { horizontalLayout: 'full' })
+    figlet.textSync('React repo', { horizontalLayout: 'full' })
   )
 );
 

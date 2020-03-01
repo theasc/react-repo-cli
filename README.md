@@ -4,4 +4,4 @@ CLI to generate react-native and react project and linking it to your remote git
 
 ### Installation
 `````
-npm i -g react-repo
+npm i -g react-repo-cli

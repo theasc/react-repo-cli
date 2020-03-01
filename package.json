@@ -1,6 +1,6 @@
 {
   "name": "react-repo-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cli for creating react, react-native project and directly repo in the process. ",
   "main": "index.js",
   "scripts": {
